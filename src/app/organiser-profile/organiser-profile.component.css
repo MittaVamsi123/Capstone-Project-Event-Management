@@ -1,0 +1,32 @@
+.profile {
+  padding: 16px;
+  background-color: #0D47A1; /* Deep Blue */
+  color: #FFC107; /* Amber */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.profile-item mat-label {
+  font-weight: bold;
+  margin-left: 570px;
+}
+
+.profile div {
+  margin-bottom: 10px;
+}
+
+.heading {
+  background-color: #0D47A1; 
+  color: #FFC107; 
+  text-align: center;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+

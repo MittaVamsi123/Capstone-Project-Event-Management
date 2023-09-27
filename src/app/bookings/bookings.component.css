@@ -1,0 +1,45 @@
+/* Define Colors */
+:root {
+  --primary-color: #0D47A1; /* Deep Blue */
+  --accent-color: #FFC107; /* Amber */
+}
+
+/* Apply Theme */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; /* Angular Material Theme */
+
+/* Component Styles */
+.mat-table {
+  width: 1000%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.mat-header-cell,
+.mat-cell {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  text-align: left;
+}
+
+.mat-header-cell {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.mat-row:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.mat-row:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.heading {
+  background-color: #0D47A1; 
+  color: #FFC107; 
+  text-align: center;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}

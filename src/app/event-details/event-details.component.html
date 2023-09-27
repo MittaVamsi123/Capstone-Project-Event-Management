@@ -1,0 +1,24 @@
+<mat-card class="heading mat-elevation-z8">
+    <mat-card-title>Event Details</mat-card-title>
+</mat-card>
+
+<div class="event-details">
+    <div>
+        <mat-label>NAME : </mat-label>{{events.name}}
+    </div>
+    <div>
+        <mat-label>ORGANISER : </mat-label>{{events.organiser}}
+    </div>
+    <div>
+        <mat-label>LOCATION : </mat-label>{{events.location}}
+    </div>
+    <div>
+        <mat-label>PRICE : </mat-label>{{events.price}}
+    </div>
+    <div>
+        <mat-label>EVENT DATE : </mat-label>{{events.date}}
+    </div>
+    <div>
+        <button mat-button color="primary" (click)="book(events.id,events.price)">BOOK</button>
+    </div>
+</div>

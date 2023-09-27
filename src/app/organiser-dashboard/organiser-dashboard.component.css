@@ -1,0 +1,36 @@
+.heading {
+  background-color: #0D47A1; 
+  color: #FFC107; 
+  text-align: center;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.org {
+  display: flex;
+  gap: 16px;
+}
+
+button.mat-raised-button {
+  background-color: #0D47A1; /* Deep Blue */
+  color: #FFC107; /* Amber */
+}
+
+button.mat-raised-button:hover {
+  background-color: #002171; /* Darker shade of Deep Blue */
+}
+
+.mat-display-1 {
+  text-align: center;
+}
+
+.db {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+button {
+  margin: 8px;
+}

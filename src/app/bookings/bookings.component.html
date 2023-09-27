@@ -1,0 +1,34 @@
+<mat-card class="heading mat-elevation-z8">
+    <mat-card-title>Booking List</mat-card-title>
+</mat-card>
+
+<table mat-table [dataSource]="bookings">
+    <ng-container matColumnDef="bookingId">
+      <th mat-header-cell *matHeaderCellDef> Booking ID </th>
+      <td mat-cell *matCellDef="let booking"> {{ booking.bookingId }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="bookingDate">
+      <th mat-header-cell *matHeaderCellDef> Booking Date </th>
+      <td mat-cell *matCellDef="let booking"> {{ booking.bookingDate }} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="username">
+      <th mat-header-cell *matHeaderCellDef> Username </th>
+      <td mat-cell *matCellDef="let booking"> {{ booking.user.fullname }} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="organiser">
+      <th mat-header-cell *matHeaderCellDef> Organiser </th>
+      <td mat-cell *matCellDef="let booking"> {{ booking.event.organiser }} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="eventName">
+      <th mat-header-cell *matHeaderCellDef> Event Name </th>
+      <td mat-cell *matCellDef="let booking"> {{ booking.event.name }} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="['bookingId','bookingDate', 'username', 'organiser', 'eventName']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['bookingId', 'bookingDate', 'username', 'organiser', 'eventName'];"></tr>
+  </table>
+  

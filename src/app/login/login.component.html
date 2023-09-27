@@ -1,0 +1,25 @@
+<mat-card class="heading">
+  <mat-card-title>SIGN IN</mat-card-title>
+</mat-card>
+
+<section class="block">
+  <form class="login-block">
+    <mat-form-field class="form-group">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" id="userName" placeholder="Email ID is your username" [(ngModel)]="model.emailId" name="emailId" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-group">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" id="password" placeholder="Enter password" [(ngModel)]="model.password" name="password" required>
+    </mat-form-field>
+
+    <div class="form-group">
+      <button mat-raised-button color="primary" (click)="loginUser()">Sign In</button>
+    </div>
+
+    <div>
+      <a mat-button color="primary" [routerLink]="['/register']">New user? Register</a>
+    </div>
+  </form>
+</section>

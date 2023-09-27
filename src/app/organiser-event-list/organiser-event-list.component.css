@@ -1,0 +1,43 @@
+.heading {
+  background-color: #0D47A1; 
+  color: #FFC107; 
+  text-align: center;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #673AB7; /* Deep Purple */
+  color: #FFC107; /* Amber */
+}
+
+td {
+  border-bottom: 1px solid #ddd; /* Add a border between rows */
+}
+
+.mat-header-cell {
+  font-weight: bold;
+}
+
+.mat-row {
+  background-color: #EDE7F6; /* Light Purple background for rows */
+}
+
+.mat-row:nth-child(even) {
+  background-color: #D1C4E9; /* Slightly darker background for even rows */
+}
+.mat-elevation-z8 {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
